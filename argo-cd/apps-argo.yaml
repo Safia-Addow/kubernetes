@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/safia-Addow/K8S-advanced.git
+    repoURL: https://github.com/safia-Addow/kubernetes.git
     targetRevision: HEAD
     path: app-hub
 

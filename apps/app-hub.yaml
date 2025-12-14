@@ -49,9 +49,9 @@ spec:
   tls:
     - hosts:
         - the-app-hub.lab.safiaaddow.uk
-      secretName: hub-tls
+      secretName: the-hub-tls
   rules:
-    - host: hub.lab.safiaaddow.uk
+    - host: the-app-hub.lab.safiaaddow.uk
       http:
         paths:
           - path: /
@@ -62,7 +62,3 @@ spec:
                 port:
                   number: 80
 
-  tls:
-  - hosts: 
-  - the-app-hub.lab.safiaaddow.uk
-  secretName: the-app-hub-tls              
