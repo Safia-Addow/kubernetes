@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/safia-Addow/kubernetes.git
+    repoURL: "https://github.com/safia-Addow/kubernetes.git"
     targetRevision: HEAD
-    path: app-hub
+    path: apps
 
   destination:
     server: "https://kubernetes.default.svc"
