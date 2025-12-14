@@ -1,0 +1,11 @@
+installCRDs: true
+
+extraArgs:
+  - --dns01-recursive-nameservers=8.8.8.8:53
+  - --dns01-recursive-nameservers-only
+
+serviceAccount:
+  create: true
+  name: cert-manager
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::992382664378:role/cert-manager

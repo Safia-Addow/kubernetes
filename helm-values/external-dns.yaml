@@ -1,0 +1,18 @@
+provider: aws
+
+aws:
+  region: eu-west-2
+
+serviceAccount:
+  create: true
+  name: external-dns
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::992382664378:role/external-dns
+
+domainFilters:
+  - lab.safiaaddow.uk
+
+policy: upsert-only
+
+sources:
+  - ingress
