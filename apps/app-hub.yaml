@@ -31,13 +31,8 @@ spec:
   - name: http 
     protocol: TCP
     port: 80
-    targetPort: 3000
-  - name: app-port
-    protocol: TCP
-    port: 8086
-    targetPort: 3000
-
-
+    targetPort: 80
+ 
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
